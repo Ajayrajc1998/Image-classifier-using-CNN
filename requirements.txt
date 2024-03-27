@@ -2,3 +2,4 @@ streamlit
 tensorflow==2.16.1
 opencv-python
 numpy
+libgl1-mesa-glx
