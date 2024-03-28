@@ -2,12 +2,21 @@ import streamlit as st
 import tensorflow as tf
 import cv2
 import numpy as np
+import requests
 
+def download_model():
+    model_url = "https://github.com/Ajayrajc1998/Image-classifier-using-CNN/raw/main/model.h5"
+    model_path = "model.h5"
+    response = requests.get(model_url)
+    response.raise_for_status()
+    with open(model_path, "wb") as f:
+        f.write(response.content)
+    return model_path
 
 def load_model():
-    model_path = "https://github.com/Ajayrajc1998/Image-classifier-using-CNN/raw/main/model.h5"
-    return tf.keras.models.load_model(model_path)
-
+    model_path = download_model()
+    model = tf.keras.models.load_model(model_path)
+    return model
 
 model = load_model()
 
