@@ -27,15 +27,13 @@ def image_prediction(image_path):
   resized_image = resized_image / 255.0  # Normalize
   prediction = model.predict(np.expand_dims(resized_image, axis=0))[0]
   return prediction
-#   if prediction > 0.5:
-#     #print(f'Miner')
-#     return 'Miner'
-#   else:
-#       #print(f'Healthy')
-#       return 'Healthy'
 
 # Streamlit UI
-st.title("Image Classifier")
+st.title("Image Classification of Coffee Plant Leaves")
+
+st.markdown("### Test Data Image Folder")
+st.markdown("You can access the test data images from the following link:")
+st.markdown("[Test Data Image Folder](https://drive.google.com/drive/folders/1W6Ih82BelCySBF9_v722TWENPxit2rmM?usp=sharing)")
 
 # Upload image
 uploaded_file = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
