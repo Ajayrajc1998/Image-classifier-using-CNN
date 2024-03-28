@@ -5,7 +5,7 @@ import numpy as np
 
 
 def load_model():
-    model_path = "E:/STACKER BEE/Image classification using CNN/model.h5"
+    model_path = "https://github.com/Ajayrajc1998/Image-classifier-using-CNN/raw/main/model.h5"
     return tf.keras.models.load_model(model_path)
 
 
