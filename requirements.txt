@@ -1,5 +1,3 @@
-Package
--------------------------
 absl-py
 altair
 asttokens
