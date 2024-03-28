@@ -1,4 +1,5 @@
-The link of Deployed Streamlit UI: https://ajayrajc1998-image-classifier-using-cnn-app-q8xvaj.streamlit.app/ \n
+The link of Deployed Streamlit UI: https://ajayrajc1998-image-classifier-using-cnn-app-q8xvaj.streamlit.app/ 
+-------
 Branches
 -------
 1. first_train, final_train: implemented the code for training the CNN model and saving them by creating sample data from the dataset
