@@ -44,7 +44,7 @@ ml-dtypes
 namex
 nest-asyncio
 numpy
-opencv-python
+opencv-python-headless
 opt-einsum
 optree
 packaging
