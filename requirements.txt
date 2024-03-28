@@ -90,3 +90,4 @@ wcwidth
 Werkzeug
 wheel
 wrapt
+tensorflow==2.16.1
